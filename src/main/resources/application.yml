@@ -1,0 +1,41 @@
+server:
+  port: 8989
+spring:
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springboot
+    username: root
+    password: 111
+
+mybatis:
+  mapper-locations: classpath:com/csw/mapper/*.xml
+  type-aliases-package: com.csw.entity # 别名 同样为 类名或者是类名首字母小写 User ===> User|user
+
+
+
+
+
+
+id: 21
+  names：小白
+  age： 23
+bir: 2022/2/1
+price: 32.22
+qqs: 红,黄,蓝,绿
+strs: aaa,aaa,aaa
+maps: "{driver:'com.mysql.jdbc.Driver'},url:'jdbc:mysql://localhost:3306/springboot'"
+
+User:
+  namea:小黑
+  age: 22
+  bir:2003/3/4
+  id:2
+  maps:
+    aaa:xxx
+
